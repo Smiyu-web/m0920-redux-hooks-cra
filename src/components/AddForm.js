@@ -1,9 +1,8 @@
 import React, { useRef } from "react";
-import { connect, useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const AddForm = (props) => {
   const refContainer = useRef(null);
-  // const newToDo = useSelector((state) => state.newToDo); //same as mapStateToProps
 
   const dispatch = useDispatch();
 

@@ -1,9 +1,9 @@
 import React from "react";
 import ToDoList from "./components/ToDoList";
 import "./styles.css";
-import { connect, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
-function App({ props }) {
+const App = (props) => {
   const toDoList = useSelector((state) => state.toDoList);
 
   return (
@@ -12,7 +12,7 @@ function App({ props }) {
       <ToDoList />
     </div>
   );
-}
+};
 
 // const mapStateToProps = (state) => {
 //   // console.log(state)
